@@ -4,10 +4,26 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 ul,
 ol {
   list-style-type: none;
-  padding-left: 0
+  margin: 0;
+  padding-left: 0;
+  display: flex;
 }
 
 a {
@@ -19,6 +35,10 @@ a {
   max-width: 1158px;
   padding: 0 15px;
   margin: auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 /* header start */
@@ -71,7 +91,12 @@ a {
 /*section-solution start*/
 .section-solution {
   background-color: #2e2f42;
+  display: flex;
 }
+
+/* .solution-container {
+  display: flex;
+} */
 
 .header-solution {
   font-weight: 700;
@@ -91,6 +116,7 @@ a {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  margin: auto;
 }
 
 .btn:hover,
@@ -100,6 +126,9 @@ a {
 /*section-solution*/
 
 /* advantag-section start */
+.advantages-section {
+  padding: 120px 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -112,6 +141,12 @@ a {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+.advantages-item {
+  width: calc((100%-72px)/4);
+  gap: 24px;
+}
+
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
@@ -141,8 +176,12 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
+.team-list {
+  gap: 24px;
+}
 .team-item {
   background-color: #ffffff;
 }
@@ -153,6 +192,12 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .team-text {
@@ -160,7 +205,12 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px
 /* team-section end */
 
 /* portfolio-section start */
@@ -195,6 +245,11 @@ a {
   background-color: #2e2f42;
   padding: 100px 0
 }
+
+.footer-logo {
+  display: inline-block;
+}
+
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
@@ -205,3 +260,9 @@ a {
   color: #f4f4fd;
 }
 /* footer end */
+
+/* глобально скинути падінги списків ul
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0; */
