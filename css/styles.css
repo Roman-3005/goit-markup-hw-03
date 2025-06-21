@@ -106,7 +106,7 @@ img {
 }
 
 .contacts-link {
-  padding: 24px 0;
+  padding: 24px 0;  
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -185,7 +185,6 @@ img {
 }
 
 .advantages-list {
-  margin: 0;
   gap: 24px;
 }
 
@@ -266,7 +265,6 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
 }
 /* team-section end */
 
@@ -288,6 +286,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  gap: 8px;
 }
 
 .portfolio-list {
@@ -307,6 +306,10 @@ img {
   padding: 32px 16px;
   width: 360px;
   height: auto;
+  text-align: start;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .portfolio-text {
